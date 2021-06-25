@@ -19,3 +19,11 @@ $router->get('/', function () use ($router) {
 $router->get('/key', function () {
     return str_random(32);
 });
+
+$router->get('/foo', function () {
+    return 'Hello, GET method';
+});
+
+$router->post('/bar', function () {
+    return 'Hello, POST method';
+});
